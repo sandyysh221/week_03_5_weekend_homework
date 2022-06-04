@@ -1,8 +1,5 @@
 from models.player import Player
 
-player_1 = Player("Elsa", "rock")
-player_2 = Player("Anna", "paper")
-
 
 class Game:
     def __init__(self, player_1, player_2):
