@@ -49,6 +49,15 @@ header > nav > ul > li > a:hover {
   color: var(--accent-color);
 }
 
+#play-link {
+  text-decoration: none;
+}
+
+#play-link:hover {
+  text-decoration: underline;
+  color: var(--primary-color);
+}
+
 .winner-container {
   background: var(--secondary-color);
   border-color: var(--primary-color);

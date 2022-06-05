@@ -1,4 +1,4 @@
-from flask import render_template
+from flask import render_template, request
 from app import app
 from models.game import Game
 from models.player import Player
@@ -26,4 +26,20 @@ def play_from_url(player_1_choice, player_2_choice):
 
 @app.route("/play")
 def play_computer():
-    return render_template("play.html", title="Beat the Computer...")
+    return render_template("play.html", title="vs The Machine")
+
+
+@app.route("/play", methods=["POST"])
+def play_against_computer():
+    name = request.form["name"]
+    choice = request.form["choice"]
+    player = Player(name, choice)
+    computer = Game.computer_player()
+    winner = Game.results(player, computer)
+    return render_template(
+        "results.html",
+        title="Results",
+        winner=winner,
+        player_1=player,
+        player_2=computer,
+    )
