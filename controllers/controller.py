@@ -22,3 +22,8 @@ def play_from_url(player_1_choice, player_2_choice):
         player_1=player_1,
         player_2=player_2,
     )
+
+
+@app.route("/play")
+def play_computer():
+    return render_template("play.html", title="Beat the Computer...")
