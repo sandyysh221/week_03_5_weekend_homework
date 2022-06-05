@@ -1,18 +1,26 @@
 {% extends "base.html" %} {% block content %}
 
-<form action="/play" method="POST">
-  <label for="name">
-    <span>Name:</span>
-    <input id="name" name="name" type="name" required />
-  </label>
-  <label for="choice">
-    <span>Choose your weapon:</span>
-    <select id="choice" name="choice">
-      <option value="rock">Rock</option>
-      <option value="paper">Paper</option>
-      <option value="scissors">Scissors</option>
-    </select>
-  </label>
-  <button>Submit</button>
-</form>
+<div class="computer-container">
+  <span class="instructions">
+  Interested in trying your luck against a computer? Enter your name below and
+  choose your weapon. The computer's choice will be completely random.<br/>May the odds ever be in your favour!</span>
+ <p>
+  <form action="/play" method="POST">
+    <label for="name">
+      Name:
+      <input id="name" name="name" type="name" required />
+    </label></p>
+    <p>
+      <label for="choice">
+        <span>Choose your weapon:</span>
+        <select id="choice" name="choice">
+          <option value="rock">Rock</option>
+          <option value="paper">Paper</option>
+          <option value="scissors">Scissors</option>
+        </select>
+      </label>
+    </p>
+    <button>Rock, Paper, Scissors, Go!</button>
+  </form>
+</div>
 {% endblock content %}
