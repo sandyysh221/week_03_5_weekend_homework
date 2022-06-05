@@ -1,0 +1,93 @@
+:root {
+  --primary-color: #4091d0;
+  --secondary-color: #fcd6d3;
+  --accent-color: #f0fbf4;
+}
+
+body {
+  font-family: "Odibee Sans", cursive;
+  font-size: 1.5rem;
+  background-image: url("../static/yashasi_rps.jpeg");
+  background-attachment: fixed;
+  background-position: bottom right;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+header {
+  padding: 1rem;
+  background: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+header > h1 {
+  font-family: "Press Start 2P", cursive;
+  margin: 0;
+  padding: 15px;
+}
+
+header > nav > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+header > nav > ul > li > a {
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+header > nav > ul > li > a:hover {
+  font-size: 1.5rem;
+  text-decoration: underline;
+  color: var(--accent-color);
+}
+
+.winner-container {
+  background: var(--secondary-color);
+  border-color: var(--primary-color);
+  border-radius: 10px;
+  display: block;
+  margin: 10px auto;
+  padding: 30px 60px;
+  color: #383e58;
+  max-width: 40rem;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  opacity: 0.85;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.player-wins {
+  padding: 1rem;
+  background: #b4e026;
+  -webkit-animation: flash linear 2s infinite;
+  animation: flash linear 2s infinite;
+  margin-top: -50px;
+}
+
+.draw {
+  padding: 1rem;
+  background: #fab171;
+  -webkit-animation: flash linear 2s infinite;
+  animation: flash linear 2s infinite;
+  margin-top: -50px;
+}
+
+@-webkit-keyframes flash {
+  0% {
+    opacity: 1.5;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1.5;
+  }
+}
