@@ -20,4 +20,6 @@ You can also play against the Computer whose choice will be random.![Screenshot 
 If the user and computer choose the same, it will state it's a draw and blink in a light-peach colour.
 ![Screenshot 2022-06-05 at 11 36 59](https://user-images.githubusercontent.com/102677016/172048229-e44f31c5-aa03-42d1-abe8-b97e8c15364a.png)
 
-Enjoy!
+Enjoy! ✨
+
+Background image source: &#169;[yashasi](https://yashasi.tistory.com/)
